@@ -12,6 +12,7 @@ import { ROUTES } from "@utils/routes";
 import { useTypesQuery } from "@data/type/use-types.query";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
+import { ReadingTable } from "@components/icons/category";
 
 const AuthorizedMenu = dynamic(
   () => import("@components/layout/navbar/authorized-menu"),
@@ -43,7 +44,9 @@ const NavbarWithSearch = () => {
       ref={navbarRef}
       className="site-header-with-search h-14 md:h-16 lg:h-auto"
     >
+    
       <nav
+      style={{backgroundColor:"#202020",opacity: 0.4}}
         className={cn(
           "w-full h-14 md:h-16 lg:h-22 py-5 px-4 lg:px-8 flex justify-between items-center  top-0 end-0 z-20 transition-transform duration-300",
           {
@@ -60,28 +63,16 @@ const NavbarWithSearch = () => {
           </div>
         ) : (
           <>
-            <Logo className="mx-auto lg:mx-0" />
+            <Logo className="mx-auto lg:mx-0 opacity-100" />
+            {/* <p className="text-head">hihello</p> */}
             <ProductTypeMenu className="ms-10 me-auto hidden xl:block" />
-            <div className="hidden lg:block w-full">
-              <div
-                className={cn(
-                  "w-full xl:w-11/12 2xl:w-10/12 mx-auto px-10 overflow-hidden",
-                  {
-                    hidden: !displayHeaderSearch && hasType,
-                    flex: displayHeaderSearch || !hasType,
-                  }
-                )}
-              >
-                <Search label={t("text-search-label")} variant="minimal" />
-              </div>
-            </div>
-            <div>
-              <ul className="hidden lg:flex items-center flex-shrink-10 space-s-10" style={{color:'white'}}>
+            <div className="justify-content-center flex items-center" style={{position:'absolute',left:'29%'}}>
+              <ul className="hidden lg:flex items-center flex-shrink-10 space-s-9" style={{opacity: 1}}>
                 {isAuthorize ? (
                   <li key="track-orders">
                     <Link
                       href={ROUTES.ORDERS}
-                      className="font-semibold text-heading justify-content-center flex items-center transition duration-200 no-underline hover:text-accent focus:text-accent"
+                      className="font-extrabold color-border-50 justify-content-center flex items-center transition duration-200 no-underline hover:text-accent focus:text-accent"
                     >
                       {t("nav-menu-track-order")}
                     </Link>
@@ -111,6 +102,20 @@ const NavbarWithSearch = () => {
                 )} */}
               </ul>
             </div>
+            <div className="hidden lg:block w-full items-end	">
+              <div
+                className={cn(
+                  "mr-2 xl:w-5/12 2xl:w-5/12 mx-auto  overflow-hidden items-end	 ",
+                  {
+                    hidden: !displayHeaderSearch && hasType,
+                    flex: displayHeaderSearch || !hasType,
+                  }
+                )}
+              >
+                <Search className="items-end	" label={t("text-search-label")} variant="minimal" />
+              </div>
+            </div>
+           
           </>
         )}
       </nav>

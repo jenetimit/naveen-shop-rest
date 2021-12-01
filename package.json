@@ -37,6 +37,9 @@
   "dependencies": {
     "flag": "^4.4.0",
     "graphql": "^16.0.1",
-    "reactstrap": "^9.0.1"
+    "react-grid-gallery": "^0.5.5",
+    "react-modal": "^3.14.4",
+    "reactstrap": "^9.0.1",
+    "styled-components": "^5.3.3"
   }
 }

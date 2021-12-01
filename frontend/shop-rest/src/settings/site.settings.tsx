@@ -57,7 +57,10 @@ export const siteSettings = {
   },
   
   headerLinks: [
-    { href: ROUTES.SHOPS, icon: null, label: "nav-menu-shops" },
+    // { href: ROUTES.SHOPS, icon: null, label: "nav-menu-shops" },
+    { href: ROUTES.HOME, icon: null, label: "Home" },
+    { href: ROUTES.ABOUT, icon: null, label: "About" },
+    { href: ROUTES.CUSTOMOUTFIT, icon: null, label: "CustomOutfit" },
     { href: ROUTES.OFFERS, icon: null, label: "nav-menu-offer" },
     { href: ROUTES.HELP, label: "nav-menu-faq" },
     { href: ROUTES.CONTACT, label: "nav-menu-contact" },

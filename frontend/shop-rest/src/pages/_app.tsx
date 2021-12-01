@@ -104,7 +104,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
                       <Component {...pageProps} />
                     </Layout>
                     <ToastContainer autoClose={2000} />
-                    <ManagedModal />
+                    {/* <ManagedModal /> */}
                     <SidebarContainer />
                   </SearchProvider>
                 </CheckoutProvider>

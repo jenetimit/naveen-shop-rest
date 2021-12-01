@@ -7,6 +7,7 @@ import { getIcon } from "@utils/get-icon";
 import * as CategoryIcons from "@components/icons/category";
 import { useUI } from "@contexts/ui.context";
 import { useEffect, useState } from "react";
+import { Link } from "..";
 
 function SidebarMenuItem({ className, item, depth = 0 }: any) {
   const router = useRouter();
@@ -82,6 +83,7 @@ function SidebarMenuItem({ className, item, depth = 0 }: any) {
           )}
           <span>{name}</span>
           <span className="ms-auto">{expandIcon}</span>
+          <a href="/customoutfit" >Custom Outfit</a>      
         </button>
       </motion.li>
       <AnimatePresence initial={false}>

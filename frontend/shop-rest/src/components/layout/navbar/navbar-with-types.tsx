@@ -82,7 +82,7 @@ const NavbarWithTypes: React.FC = () => {
             "w-full h-14 md:h-16 lg:h-22 py-5 px-4 lg:px-8 flex justify-between items-center border-b border-gray-100 "
           )}
         >
-          <Logo className="mx-auto lg:mx-0" />
+          <Logo className="mx-auto lg:mx-5" />
 
           <ul className="hidden lg:flex items-center flex-shrink-0 space-s-10">
             {isAuthorize ? (

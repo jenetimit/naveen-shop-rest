@@ -14,4 +14,6 @@ export const ROUTES = {
   TERMS: "/terms",
   CONTACT: "/contact",
   SHOPS: "/shops",
+  CUSTOMOUTFIT: "/customoutfit",
+  ABOUT: "/about"
 };
