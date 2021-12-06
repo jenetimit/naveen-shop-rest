@@ -1,7 +1,7 @@
 {
   "build": {
     "env": {
-      "NEXT_PUBLIC_REST_API_ENDPOINT": "https://navin.imithosting.com/"
+      "NEXT_PUBLIC_REST_API_ENDPOINT": "https://navin.imithosting.com"
     }
   }
 }
