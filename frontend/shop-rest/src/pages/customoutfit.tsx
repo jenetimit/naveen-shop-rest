@@ -10,6 +10,7 @@ import { useProductsQuery } from "@data/product/use-products.query";
 import { Fragment } from "react";
 import { useTranslation } from "next-i18next";
 import Footer from "@components/common/footer";
+import Image from 'next/image'
 
 const ProductFeedLoader = dynamic(
   () => import("@components/ui/loaders/product-feed-loader")
@@ -51,7 +52,59 @@ const Feed = () => {
     <>
     <Navbar />
 
-      <div className="bg-gray-100 min-h-full pt-6 pb-8 px-4 lg:p-8">
+    <div className="container grid grid-cols-3 gap-2 mx-auto">
+    <div className="w-full rounded">
+      <p>hi hello</p>
+      <Image
+            src="/bap.png"
+            alt={t("404-heading")}
+            width={500}
+            height={500}
+          />
+    </div>
+    <div className="w-full rounded">
+    <p>hi hello</p>
+
+    <Image
+            src="/bap.png"
+            alt={t("404-heading")}
+            width={500}
+            height={500}
+          />
+    </div>
+    <div className="w-full rounded">
+    <p>hi hello</p>
+
+    <Image
+            src="/bap.png"
+            alt={t("404-heading")}
+            width={500}
+            height={500}
+          />
+    </div>
+    <div className="w-full rounded">
+    <p>hi hello</p>
+
+    <Image
+            src="/bap.png"
+            alt={t("404-heading")}
+            width={500}
+            height={500}
+          />
+    </div>
+    <div className="w-full rounded">
+    <p>hi hello</p>
+
+    <Image
+            src="/bap.png"
+            alt={t("404-heading")}
+            width={500}
+            height={500}
+          />
+    </div>
+</div>
+
+      {/* <div className="bg-gray-100 min-h-full pt-6 pb-8 px-4 lg:p-8">
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 3xl:grid-cols-6 gap-3">
         {loading && !data?.pages?.length ? (
           <ProductFeedLoader limit={20} />
@@ -80,7 +133,7 @@ const Feed = () => {
           </Button>
         </div>
       )}
-    </div>
+    </div> */}
     <Footer />
     </>
   );
