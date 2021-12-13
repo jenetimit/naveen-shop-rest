@@ -45,7 +45,7 @@ class AttachmentController extends CoreController
         $urls = [];
         foreach ($request->attachment as $media) {
             $attachment = new Attachment;
-            $attachment->save();
+           
             $attachment->addMedia($media)->toMediaCollection();
             foreach ($attachment->getMedia() as $image) {
                 $converted_url = [
@@ -55,6 +55,8 @@ class AttachmentController extends CoreController
                 ];
             }
             $urls[] = $converted_url;
+            $attachment->url=$urls;
+            $attachment->save();
         }
         return $urls;
     }
