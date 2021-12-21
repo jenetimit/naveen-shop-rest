@@ -8,7 +8,7 @@ export const siteSettings = {
   description: "",
   logo: {
     url: "/logo.png",
-    alt: "PickBazar",
+    alt: "Navin Creations",
     href: "/",
     width: 128,
     height: 40,
@@ -29,27 +29,28 @@ export const siteSettings = {
   },
   author: {
     name: "RedQ, Inc.",
-    websiteUrl: "https://redq.io",
-    address: "115 E 9th St, New York, CA 90079,USA",
-    phone: "+971-321-4841-78",
+    mailid: "info@navincreations.com",
+    address: "Navin Creations , 18/2052 , Kochupully Road,Thoppumpady , Kochi-682005,Kerala",
+    phone: "+91-735-631-6538",
     social: [
+      
       {
-        link: "https://www.facebook.com",
+        link: "https://www.facebook.com/NavinCreations/",
         icon: <FacebookIcon width="16px" height="16px" />,
         hoverClass: "text-social-facebook",
       },
       {
-        link: "https://www.instagram.com",
+        link: "https://www.instagram.com/baptismdressindia/",
         icon: <InstagramIcon width="16px" height="16px" />,
         hoverClass: "text-social-instagram",
       },
       {
-        link: "https://www.twitter.com",
+        link: "https://twitter.com/navincreations",
         icon: <TwitterIcon width="16px" height="16px" />,
         hoverClass: "text-social-twitter",
       },
       {
-        link: "https://www.youtube.com",
+        link: "https://in.pinterest.com/pin/357121445449982926/",
         icon: <YouTubeIcon width="16px" height="16px" />,
         hoverClass: "text-social-youtube",
       },
@@ -60,10 +61,10 @@ export const siteSettings = {
     // { href: ROUTES.SHOPS, icon: null, label: "nav-menu-shops" },
     { href: ROUTES.HOME, icon: null, label: "Home" },
     { href: ROUTES.ABOUT, icon: null, label: "About" },
-    { href: ROUTES.CUSTOMOUTFIT, icon: null, label: "CustomOutfit" },
-    { href: ROUTES.OFFERS, icon: null, label: "nav-menu-offer" },
-    { href: ROUTES.HELP, label: "nav-menu-faq" },
-    { href: ROUTES.CONTACT, label: "nav-menu-contact" },
+    { href: ROUTES.CUSTOMOUTFIT, icon: null, label: "Customize" },
+   
+    { href: ROUTES.HELP, label: "FAQ" },
+    { href: ROUTES.CONTACT, label: "Contact" },
   ],
   authorizedLinks: [
     { href: ROUTES.PROFILE, label: "auth-menu-profile" },

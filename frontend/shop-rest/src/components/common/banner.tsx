@@ -41,11 +41,11 @@ const Banner: React.FC<BannerProps> = ({ banner, className }) => {
           <Search label="search" />
         </div>
         <p className="p-5 mt-8 text-base xl:text-lg text-heading" style={{color:'white'}}>
-          {/* {t(banner?.subheading)} */}And the Holy Spirit on him in a bodily form like a dove.And a voice came from heaven:
+          {/* {t(banner?.subheading)} */}And the Holy Spirit on him in a bodily form like a dove. And a voice came from heaven:
         </p>
         <p className=" text-base xl:text-lg text-heading" style={{color:'white'}}>
           {/* {t(banner?.subheading)} */}
-          "You are my son,whom i love;with you i'm well pleased."
+          "You are my son,whom i love; with you i'm well pleased."
         </p>
         <p className=" text-base xl:text-lg text-heading xl:mb-2" style={{color:'white'}}>
           {/* {t(banner?.subheading)} */}Luke 3:22

@@ -12,6 +12,7 @@ export interface Props extends InputHTMLAttributes<HTMLInputElement> {
   onClearSearch: (e: any) => void;
 }
 
+const color ="#000";
 const classes = {
   normal:
     "bg-light ps-6 pe-14 rounded-te-none rounded-be-none  border border-e-0 border-transparent focus:border-accent",
@@ -46,9 +47,10 @@ const SearchBox: React.FC<Props> = ({
           id={label}
           type="text"
           value={value}
+          color={color}
           autoComplete="off"
           className={cn(
-            "w-full h-full flex item-center appearance-none transition duration-300 ease-in-out text-heading text-sm placeholder-gray-500 overflow-hidden rounded-lg focus:outline-none focus:ring-0",
+            "w-full h-full flex item-center appearance-none transition duration-300 ease-in-out text-sm overflow-hidden rounded-lg focus:outline-none focus:ring-0",
             classes[variant]
           )}
           {...rest}
@@ -70,17 +72,10 @@ const SearchBox: React.FC<Props> = ({
           </button>
         )}
 
-        {variant === "normal" ? (
-          <button className="h-full px-8 flex items-center rounded-lg rounded-ts-none rounded-bs-none bg-accent text-light font-semibold transition-colors duration-200 focus:outline-none hover:bg-accent-hover focus:bg-accent-hover">
+          <button className="h-full px-8 flex items-center rounded-lg rounded-ts-none rounded-bs-none bg-dark text-light font-semibold transition-colors duration-200 focus:outline-none  focus:bg-accent-hover">
             <SearchIcon className="w-4 h-4 me-2.5" />
             {t("common:text-search")}
           </button>
-        ) : (
-          <button className="h-full w-10 md:w-14 flex items-center justify-center absolute start-0 text-body transition-colors duration-200 focus:outline-none hover:text-accent-hover focus:text-accent-hover">
-            <span className="sr-only">{t("common:text-search")}</span>
-            <SearchIcon className="w-3.5 h-3.5 md:w-4 md:h-4" />
-          </button>
-        )}
       </div>
     </form>
   );

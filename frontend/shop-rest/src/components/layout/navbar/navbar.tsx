@@ -40,7 +40,7 @@ const Navbar = () => {
           {siteSettings.headerLinks.map(({ href, label, icon }) => (
             <li key={`${href}${label}`}>
               <NavLink activeClassName="text-accent" href={href}>
-                <a className="no-underline font-semibold flex items-center transition-colors duration-200 hover:text-accent focus:text-accent">
+                <a className="no-underline font-semibold flex items-center transition-colors duration-200 hover:text-accent focus:text-accent" >
                   {icon && <span className="me-2">{icon}</span>}
                   {t(label)}
                 </a>

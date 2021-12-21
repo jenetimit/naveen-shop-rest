@@ -3,6 +3,8 @@ import "@fontsource/open-sans";
 import "@fontsource/open-sans/600.css";
 import "@fontsource/open-sans/700.css";
 import "@assets/main.css";
+import "@assets/custom-footer.css"
+import "@assets/carousel.css"
 import "react-toastify/dist/ReactToastify.css";
 import { UIProvider, useUI } from "@contexts/ui.context";
 import { SearchProvider } from "@contexts/search.context";
@@ -104,7 +106,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
                       <Component {...pageProps} />
                     </Layout>
                     <ToastContainer autoClose={2000} />
-                    {/* <ManagedModal /> */}
+                    <ManagedModal />
                     <SidebarContainer />
                   </SearchProvider>
                 </CheckoutProvider>

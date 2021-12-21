@@ -44,7 +44,7 @@ const TextArea = React.forwardRef<HTMLTextAreaElement, Props>((props, ref) => {
         id={name}
         name={name}
         className={cn(
-          "px-4 py-3 flex items-center w-full rounded appearance-none transition duration-300 ease-in-out text-heading text-sm focus:outline-none focus:ring-0",
+          "px-4 py-3 flex items-center w-full rounded appearance-none transition duration-300 ease-in-out text-sm focus:outline-none focus:ring-0",
           shadow && "focus:shadow",
           variantClasses[variant],
           inputClassName

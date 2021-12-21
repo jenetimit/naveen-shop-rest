@@ -4,9 +4,9 @@ export const ROUTES = {
   PROFILE: "/profile",
   CHANGE_PASSWORD: "/change-password",
   ORDERS: "/orders",
-  HELP: "/help",
+  HELP: "/help", //faq
   LOGOUT: "/logout",
-  OFFERS: "/offers",
+  OFFERS: "/clothing",
   ORDER_RECEIVED: "/order-received",
   PRODUCT: "/products",
   ORDER: "/order",

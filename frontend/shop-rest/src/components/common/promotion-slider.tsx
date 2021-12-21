@@ -55,8 +55,60 @@ SwiperCore.use([Navigation]);
 export default function PromotionSlider() {
   const { t } = useTranslation();
   return (
-    <>
-    </>
+    <div style={{backgroundImage:`url("https://mcdn.wallpapersafari.com/medium/30/19/iX7L0x.png")` }}>
+    <div className="bg-light-100 min-h-full pt-6 pb-8 px-8 lg:p-24 bg section-bg fill bg-fill bg-loaded">
+    <div style={{flexDirection: 'row'}}>
+    <h2 className="decorated text-2xl mb-8"><span><strong>OUR BESTSELLING PRODUCTS FOR YOUR CUTE LITTLE GEM</strong></span></h2>
+
+    </div>
+        <div className="grid lg:grid-cols-4 2xl:grid-cols-5 3xl:grid-cols-6 gap-0">
+              <div>
+              <img
+                    className="rounded-xl"
+                    src="/bap.png"
+                    alt={t("404-heading")}
+                    width={250}
+                    height={250}
+                  />
+                  <p className="mt-5 ml-2">Evah – Pink Cotton Gown Set <br></br>for Baby Girl</p>
+                  <p className=" ml-2" ><strong>₹ 3,657.00</strong></p>
+              </div>
+              <div>
+              <img
+                    className="rounded-xl"
+                    src="/babygirl.jpg"
+                    alt={t("404-heading")}
+                    width={250}
+                    height={250}
+                  />
+                        <p className="mt-5 ml-2">Evah – Pink Cotton Gown Set <br></br>for Baby Girl</p>
+                  <p className=" ml-2" ><strong>₹ 3,657.00</strong></p>
+              </div>
+              <div>
+              <img
+                    className="rounded-xl"
+                    src="/bap.png"
+                    alt={t("404-heading")}
+                    width={250}
+                    height={250}
+                  />
+                        <p className="mt-5 ml-2">Evah – Pink Cotton Gown Set <br></br>for Baby Girl</p>
+                  <p className=" ml-2" ><strong>₹ 3,657.00</strong></p>
+              </div>
+              <div>
+              <img
+                    className="rounded-xl"
+                    src="/bap.png"
+                    alt={t("404-heading")}
+                    width={250}
+                    height={250}
+                  />
+                        <p className="mt-5 ml-2">Evah – Pink Cotton Gown Set <br></br>for Baby Girl</p>
+                  <p className=" ml-2" ><strong>₹ 3,657.00</strong></p>
+              </div>
+    </div>
+  </div>
+  </div>
     // <div className="px-6 py-5 md:px-8 xl:px-12 md:py-10 border-t border-border-200">
     //   <div className="relative">
     //     <Swiper

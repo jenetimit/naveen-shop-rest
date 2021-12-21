@@ -9,12 +9,16 @@ import { useProductsQuery } from "@data/product/use-products.query";
 import { Fragment } from "react";
 import { useTranslation } from "next-i18next";
 
+
 const ProductFeedLoader = dynamic(
   () => import("@components/ui/loaders/product-feed-loader")
 );
 
 const Feed = () => {
   const { t } = useTranslation("common");
+  const flickityOptions = {
+    initialIndex: 2
+}
   const { query } = useRouter();
   const {
     isFetching: loading,
@@ -42,37 +46,40 @@ const Feed = () => {
     );
   }
   return (
+    <>
     
+
     <div className="bg-gray-100 min-h-full pt-6 pb-8 px-4 lg:p-8">
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 3xl:grid-cols-6 gap-3">
-        {loading && !data?.pages?.length ? (
-          <ProductFeedLoader limit={20} />
-        ) : (
-          <>
-            {data?.pages.map((products, _idx) => (
-              <Fragment key={_idx}>
-                {products?.data?.map((product) => (
-                  <motion.div key={product.id}>
-                    {renderProductCard(product)}
-                  </motion.div>
-                ))}
-              </Fragment>
-            ))}
-          </>
-        )}
-      </div>
-      {hasNextPage && (
-        <div className="flex justify-center mt-8 lg:mt-12">
-          <Button
-            loading={loadingMore}
-            onClick={handleLoadMore}
-            className="text-sm md:text-base font-semibold h-11"
-          >
-            {t("text-load-more")}
-          </Button>
-        </div>
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 3xl:grid-cols-6 gap-3">
+      {loading && !data?.pages?.length ? (
+        <ProductFeedLoader limit={20} />
+      ) : (
+        <>
+          {data?.pages.map((products, _idx) => (
+            <Fragment key={_idx}>
+              {products?.data?.map((product) => (
+                <motion.div key={product.id}>
+                  {renderProductCard(product)}
+                </motion.div>
+              ))}
+            </Fragment>
+          ))}
+        </>
       )}
     </div>
+    {hasNextPage && (
+      <div className="flex justify-center mt-8 lg:mt-12">
+        <Button
+          loading={loadingMore}
+          onClick={handleLoadMore}
+          className="text-sm md:text-base font-semibold h-11"
+        >
+          {t("text-load-more")}
+        </Button>
+      </div>
+    )}
+  </div>
+  </>
   );
 };
 

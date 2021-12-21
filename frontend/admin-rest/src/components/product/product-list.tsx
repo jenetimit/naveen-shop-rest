@@ -103,7 +103,7 @@ const ProductList = ({ products, onPagination }: IProps) => {
             <span
               className="whitespace-nowrap"
               title={`${min_price} - ${max_price}`}
-            >{`${min_price} - ${max_price}`}</span>
+            >{value}</span>
           );
         } else {
           const { price } = usePrice({
@@ -111,7 +111,7 @@ const ProductList = ({ products, onPagination }: IProps) => {
           });
           return (
             <span className="whitespace-nowrap" title={price}>
-              {price}
+              {value}
             </span>
           );
         }

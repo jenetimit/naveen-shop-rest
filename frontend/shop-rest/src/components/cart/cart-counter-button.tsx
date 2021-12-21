@@ -9,9 +9,10 @@ const CartCounterButton = () => {
   const { t } = useTranslation();
   const { totalUniqueItems, total } = useCart();
   const { openSidebar, setSidebarView } = useUI();
-  const { price: totalPrice } = usePrice({
-    amount: total,
+  const { price : totalPrice } = usePrice({
+    amount: total
   });
+  // const count = Number({totalPrice})
   function handleCartSidebar() {
     setSidebarView("CART_VIEW");
     return openSidebar();
@@ -28,7 +29,7 @@ const CartCounterButton = () => {
         </span>
       </span>
       <span className="bg-light rounded w-full py-2 px-2 text-accent mt-3">
-        {totalPrice}
+        {total}
       </span>
     </button>
   );

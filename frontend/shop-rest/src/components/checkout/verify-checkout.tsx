@@ -82,7 +82,7 @@ const VerifyCheckout = () => {
       <div className="space-y-2 mt-4">
         <div className="flex justify-between">
           <p className="text-sm text-body">{t("text-sub-total")}</p>
-          <span className="text-sm text-body">{subtotal}</span>
+          <span className="text-sm text-body">{total}</span>
         </div>
         <div className="flex justify-between">
           <p className="text-sm text-body">{t("text-tax")}</p>

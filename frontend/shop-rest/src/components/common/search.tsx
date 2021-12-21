@@ -16,6 +16,8 @@ const Search: React.FC<Props> = ({ label, ...props }) => {
     updateSearchTerm(value);
   };
 
+  
+
   const onSearch = (e: any) => {
     e.preventDefault();
     if (!searchTerm) return;
@@ -67,6 +69,7 @@ const Search: React.FC<Props> = ({ label, ...props }) => {
       value={searchTerm}
       name="search"
       placeholder="Search your baptism cloths from here"
+     
       {...props}
     />
     </>

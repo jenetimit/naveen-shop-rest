@@ -32,9 +32,9 @@ interface FormValues {
 }
 
 const paymentSchema = Yup.object().shape({
-  // contact: Yup.string()
-  //   .min(10, "error-min-contact")
-  //   .required("error-contact-required"),
+  contact: Yup.string()
+    .min(10, "error-min-contact")
+    .required("error-contact-required"),
   payment_gateway: Yup.string().default("stripe").oneOf(["cod", "stripe"]),
   card: Yup.mixed().when("payment_gateway", {
     is: (value: string) => value === "stripe",
@@ -145,7 +145,7 @@ const PaymentForm = () => {
         label={t("text-enter-contact-number")}
         variant="outline"
         className="flex-1"
-        onChange={(e) => setValue("contact", (e.target.value))}
+        onChange={(e) => setValue("contact", maskPhoneNumber((e.target.value)))}
         error={t(errors?.contact?.message!)}
       />
 
@@ -187,7 +187,7 @@ const PaymentForm = () => {
 
           <FormattedInput
             variant="outline"
-            className=""
+            className="text-accent"
             placeholder={t("placeholder-card-number")}
             {...register("card.number")}
             options={{

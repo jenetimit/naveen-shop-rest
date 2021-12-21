@@ -20,20 +20,20 @@ const Footer = () => {
         <Row>
           <Column>
             <Heading>COMPANY INFO</Heading>
-            <FooterLink href="#">About Navin Creations</FooterLink>
+            <FooterLink href="/about">About Navin Creations</FooterLink>
             <FooterLink href="#">Our Vision</FooterLink>
-            <FooterLink href="#">FAQ</FooterLink>
+            <FooterLink href="/help">FAQ</FooterLink>
             <FooterLink href="#">Blog</FooterLink>
-            <FooterLink href="#">Contact us</FooterLink>
-            <FooterLink href="#">Buisness Oppurtunities</FooterLink>
+            <FooterLink href="/contact">Contact us</FooterLink>
+            <FooterLink href="/buisnessoppurtunities">Buisness Oppurtunities</FooterLink>
           </Column>
           <Column>
             <Heading>SHIPPING & POLICIES</Heading>
-            <FooterLink href="#">Payments</FooterLink>
-            <FooterLink href="#">Shipping Policy</FooterLink>
-            <FooterLink href="#">Return Policy</FooterLink>
-            <FooterLink href="#">Terms of Use</FooterLink>
-            <FooterLink href="#">Privacy Policy</FooterLink>
+            <FooterLink href="/paymentoptions">Payment Options</FooterLink>
+            <FooterLink href="/shippingpolicy">Shipping Policy</FooterLink>
+            <FooterLink href="/returnspolicy">Return Policy</FooterLink>
+            <FooterLink href="/termsofuse">Terms of Use</FooterLink>
+            <FooterLink href="/privacypolicy">Privacy Policy</FooterLink>
           </Column>
           <Column>
             <Heading>CONTACT US</Heading>
@@ -57,7 +57,7 @@ const Footer = () => {
         <Row>
           <Column>
             <Heading>PRODUCT CATEGORIES</Heading>
-            <FooterLink href="#">Custom-Made to Order</FooterLink>
+            <FooterLink href="#">Outfit Customization</FooterLink>
             <FooterLink href="#">Littile Kingdom Boys</FooterLink>
             <FooterLink href="#">Littile Kingdom Girls</FooterLink>
           </Column>

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "99360617b8f2847f6b7602e55daeb2f9",
+    "content-hash": "04a9bba14bba5c93da386505cd71d258",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -356,6 +356,64 @@
                 }
             ],
             "time": "2021-01-20T22:51:39+00:00"
+        },
+        {
+            "name": "cloudinary/cloudinary_php",
+            "version": "1.20.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cloudinary/cloudinary_php.git",
+                "reference": "2a8e6ed5bc6cf024022c6fcc03b69e1ce92ccaab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cloudinary/cloudinary_php/zipball/2a8e6ed5bc6cf024022c6fcc03b69e1ce92ccaab",
+                "reference": "2a8e6ed5bc6cf024022c6fcc03b69e1ce92ccaab",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "ext-zip": "*",
+                "phpunit/phpunit": "4.8.*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src"
+                ],
+                "files": [
+                    "src/Helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cloudinary",
+                    "homepage": "https://github.com/cloudinary/cloudinary_php/graphs/contributors"
+                }
+            ],
+            "description": "Cloudinary PHP SDK",
+            "homepage": "https://github.com/cloudinary/cloudinary_php",
+            "keywords": [
+                "cdn",
+                "cloud",
+                "cloudinary",
+                "image management",
+                "sdk"
+            ],
+            "support": {
+                "email": "info@cloudinary.com",
+                "issues": "https://github.com/cloudinary/cloudinary_php/issues",
+                "source": "https://github.com/cloudinary/cloudinary_php/tree/1.20.0"
+            },
+            "time": "2021-01-13T18:40:23+00:00"
         },
         {
             "name": "clue/stream-filter",
@@ -1897,7 +1955,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/laravel-omnipay",
-                "reference": "22d1ac6467d70bc7948c2d955204b644b4b11305"
+                "reference": "c7f9ff832392b0ddded7b38f757b951d7ca835c2"
             },
             "require": {
                 "illuminate/support": "~5|~6|~7|~8"
@@ -2008,6 +2066,62 @@
                 "source": "https://github.com/Intervention/image/tree/master"
             },
             "time": "2019-11-02T09:15:47+00:00"
+        },
+        {
+            "name": "jrm2k6/cloudder",
+            "version": "0.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jrm2k6/cloudder.git",
+                "reference": "82d75368890424d166bf025df39611a1d18abcc0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jrm2k6/cloudder/zipball/82d75368890424d166bf025df39611a1d18abcc0",
+                "reference": "82d75368890424d166bf025df39611a1d18abcc0",
+                "shasum": ""
+            },
+            "require": {
+                "cloudinary/cloudinary_php": ">=1.1",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "laravel/framework": ">=5.0",
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "JD\\Cloudder": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeremy Dagorn",
+                    "email": "jeremy.dagorn@gmail.com"
+                }
+            ],
+            "description": "Cloudinary API wrapper for Laravel",
+            "homepage": "https://github.com/jrm2k6/cloudder",
+            "keywords": [
+                "api",
+                "cloudinary",
+                "image",
+                "laravel",
+                "laravel4",
+                "upload"
+            ],
+            "support": {
+                "issues": "https://github.com/jrm2k6/cloudder/issues",
+                "source": "https://github.com/jrm2k6/cloudder/tree/master"
+            },
+            "abandoned": true,
+            "time": "2017-02-03T19:10:37+00:00"
         },
         {
             "name": "laminas/laminas-code",
@@ -3902,7 +4016,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/omnipay-common",
-                "reference": "fc9cb15bdb8e2f0c0035803d23a5a6bb3682fce8"
+                "reference": "9f0c83ada5e7cdd848f9d25b3a2ab7ecffa09dcd"
             },
             "require": {
                 "moneyphp/money": "^3.1",
@@ -3984,7 +4098,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/omnipay-stripe",
-                "reference": "1e8ff0086fa4fbddaedba1cc2d02edd16417368c"
+                "reference": "bed46ecb40a275f7d4728b18a085afba8e75ace3"
             },
             "require-dev": {
                 "omnipay/tests": "^3",
@@ -4632,7 +4746,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/pickbazar-shop",
-                "reference": "91ca578e24722e40a506e8b16e826a9d07a1ee89"
+                "reference": "ab8f3f4eec7061588525cb98c50c40d95a091e3b"
             },
             "require": {
                 "bensampo/laravel-enum": "^3.1.0",

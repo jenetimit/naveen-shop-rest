@@ -74,11 +74,11 @@ const Xenon: React.FC<XenonProps> = ({ product, className }) => {
             <>
               <div>
                 <span className="text-sm md:text-base text-heading font-semibold">
-                  {minPrice}
+                  {basePrice}
                 </span>
                 <span> - </span>
                 <span className="text-sm md:text-base text-heading font-semibold">
-                  {maxPrice}
+                  {basePrice}
                 </span>
               </div>
 

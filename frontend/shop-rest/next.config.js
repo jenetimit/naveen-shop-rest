@@ -20,18 +20,19 @@ module.exports = withPWA({
   },
   images: {
     domains: [
-      "googleusercontent.com",
-      "graph.facebook.com",
-      "res.cloudinary.com",
-      "s3.amazonaws.com",
-      "18.141.64.26",
-      "via.placeholder.com",
-      "pickbazarlaravel.s3.ap-southeast-1.amazonaws.com",
-      "picsum.photos",
-      "lh3.googleusercontent.com",
-      "navin.imithosting.com",
-      "localhost",
-      "127.0.0.1"
+      // "googleusercontent.com",
+      // "graph.facebook.com",
+      // "res.cloudinary.com",
+      // "s3.amazonaws.com",
+      // "18.141.64.26",
+      // "via.placeholder.com",
+      // "pickbazarlaravel.s3.ap-southeast-1.amazonaws.com",
+      // "picsum.photos",
+      // "lh3.googleusercontent.com",
+      "navin.imitpark.co.in",
+      "res.cloudinary.com"
+      // "navin.imithosting.com",
+      // "localhost"
     ],
   },
   typescript: {

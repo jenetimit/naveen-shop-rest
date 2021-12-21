@@ -347,7 +347,7 @@ const ProductDetailsModalView = ({ productSlug }: { productSlug: string }) => {
 
               {shop?.name && (
                 <div className="flex items-center mt-2">
-                  <span className="text-sm font-semibold text-heading capitalize me-6 py-1">
+                  {/* <span className="text-sm font-semibold text-heading capitalize me-6 py-1">
                     {t("common:text-sellers")}
                   </span>
 
@@ -356,7 +356,7 @@ const ProductDetailsModalView = ({ productSlug }: { productSlug: string }) => {
                     className="text-sm text-accent tracking-wider transition underline hover:text-accent-hover hover:no-underline"
                   >
                     {shop?.name}
-                  </button>
+                  </button> */}
                 </div>
               )}
             </div>

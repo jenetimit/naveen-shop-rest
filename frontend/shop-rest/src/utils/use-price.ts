@@ -52,14 +52,13 @@ export default function usePrice(data?: PriceProps | null) {
   const { amount, baseAmount, currencyCode = currency } = data ?? {};
   const locale = siteSettings.defaultLanguage;
   const value = useMemo(() => {
-    if (typeof amount !== "number" || !currencyCode) return "";
-
+    if (typeof amount == "number" || !currencyCode) return ({price : value});
     return baseAmount
       ? formatVariantPrice({ amount, baseAmount, currencyCode, locale })
       : formatPrice({ amount, currencyCode, locale });
   }, [amount, baseAmount, currencyCode]);
 
   return typeof value === "string"
-    ? { price: value, basePrice: null, discount: null }
+    ? { price: value, basePrice: value, discount: value }
     : value;
 }

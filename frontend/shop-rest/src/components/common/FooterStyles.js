@@ -40,12 +40,12 @@ export const Row = styled.div`
 `;
    
 export const FooterLink = styled.a`
-  color: #fff;
+  color: #878787;
   margin-bottom: 20px;
   font-size: 15px;
 
   &:hover {
-      color: green;
+      color: #fff;
       transition: 200ms ease-in;
   }
 `;

@@ -7,7 +7,7 @@ const Layout: React.FC = ({ children }) => (
   <div className="min-h-screen flex flex-col transition-colors duration-150 bg-gray-100">
     <Navbar />
     <div className="flex-grow">{children}</div>
-    <MobileNavigation search={false} />
+    <MobileNavigation search={true} />
   </div>
   </>
 );

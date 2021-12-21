@@ -83,7 +83,7 @@ function SidebarMenuItem({ className, item, depth = 0 }: any) {
           )}
           <span>{name}</span>
           <span className="ms-auto">{expandIcon}</span>
-          <a href="/customoutfit" >Custom Outfit</a>      
+          {/* <a href="/customoutfit" >Custom Outfit</a>       */}
         </button>
       </motion.li>
       <AnimatePresence initial={false}>

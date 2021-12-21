@@ -47,7 +47,7 @@ export const ContactPage = () => {
           </div>
 
           <div className="flex flex-col mb-8">
-            <span className="font-semibold text-heading mb-3">
+            <span className="font-semibold  mb-3" style={{color:'black'}}>
               {t("text-address")}
             </span>
             <span className="text-sm text-body">
@@ -56,7 +56,7 @@ export const ContactPage = () => {
           </div>
 
           <div className="flex flex-col mb-8">
-            <span className="font-semibold text-heading mb-3">
+            <span className="font-semibold  mb-3" style={{color:'black'}}>
               {t("text-phone")}
             </span>
             <span className="text-sm text-body">
@@ -65,25 +65,16 @@ export const ContactPage = () => {
           </div>
 
           <div className="flex flex-col mb-8">
-            <span className="font-semibold text-heading mb-3">
-              {t("text-website")}
+            <span className="font-semibold mb-3" style={{color:'black'}}>
+              {t("text-email")}
             </span>
-            <div className="flex items-center justify-between">
-              <span className="text-sm text-body">
-                {siteSettings.author.websiteUrl}
-              </span>
-              <a
-                href={siteSettings.author.websiteUrl}
-                target="_blank"
-                className="text-sm text-accent font-semibold hover:text-accent-hover focus:outline-none focus:text-blue-500"
-              >
-                {t("text-visit-site")}
-              </a>
-            </div>
+            <span className="text-sm text-body">
+              {siteSettings.author.mailid}
+            </span>
           </div>
 
           <div className="flex flex-col mb-8">
-            <span className="font-semibold text-heading mb-4">
+            <span className="font-semibold  mb-4" style={{color:'black'}}>
               {t("text-follow-us")}
             </span>
             <div className="flex items-center justify-start">
@@ -103,11 +94,11 @@ export const ContactPage = () => {
 
         {/* Contact form */}
         <div className="w-full order-1 md:order-2 mb-8 md:mb-0 md:ms-7 lg:ms-9 p-5 md:p-8 bg-light">
-          <h1 className="mb-7 text-xl md:text-2xl font-body font-bold text-heading">
+          <h1 className="mb-7 text-xl md:text-2xl font-body font-bold " style={{color:'black'}}>
             {t("text-questions-comments")}
           </h1>
-          <form onSubmit={handleSubmit(onSubmit)} noValidate>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <form onSubmit={handleSubmit(onSubmit)} noValidate >
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6" >
               <Input
                 label={t("text-name")}
                 {...register("name")}
@@ -138,7 +129,7 @@ export const ContactPage = () => {
               error={t(errors.description?.message!)}
             />
 
-            <Button loading={isLoading} disabled={isLoading}>
+            <Button loading={isLoading} disabled={isLoading} style={{backgroundColor:'black'}}>
               {t("text-submit")}
             </Button>
           </form>

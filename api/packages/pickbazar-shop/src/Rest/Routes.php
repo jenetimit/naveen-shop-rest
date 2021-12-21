@@ -74,16 +74,16 @@ Route::apiResource('settings', SettingsController::class, [
     'only' => ['index']
 ]);
 
-
+Route::apiResource('attachments', AttachmentController::class, [
+    'only' => ['store', 'update', 'destroy']
+]);
 Route::group(['middleware' => ['can:' . Permission::CUSTOMER, 'auth:sanctum']], function () {
     Route::post('/logout', 'PickBazar\Http\Controllers\UserController@logout');
     Route::apiResource('orders', OrderController::class, [
         'only' => ['index', 'show', 'store']
     ]);
     Route::get('orders/tracking_number/{tracking_number}', 'PickBazar\Http\Controllers\OrderController@findByTrackingNumber');
-    Route::apiResource('attachments', AttachmentController::class, [
-        'only' => ['store', 'update', 'destroy']
-    ]);
+    
     Route::post('checkout/verify', 'PickBazar\Http\Controllers\CheckoutController@verify');
     Route::get('me', 'PickBazar\Http\Controllers\UserController@me');
     Route::put('users/{id}', 'PickBazar\Http\Controllers\UserController@update');
