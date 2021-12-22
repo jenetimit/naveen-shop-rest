@@ -23,7 +23,7 @@ const Footer = () => {
             <FooterLink href="/about">About Navin Creations</FooterLink>
             <FooterLink href="#">Our Vision</FooterLink>
             <FooterLink href="/help">FAQ</FooterLink>
-            <FooterLink href="#">Blog</FooterLink>
+            <FooterLink href="/blog">Blog</FooterLink>
             <FooterLink href="/contact">Contact us</FooterLink>
             <FooterLink href="/buisnessoppurtunities">Buisness Oppurtunities</FooterLink>
           </Column>
